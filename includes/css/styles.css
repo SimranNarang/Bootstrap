@@ -17,6 +17,9 @@ Notes:	 Hand coded for Udemy.com
    width: 107.89px;
    height: 34.36px;
 }
+#jumbotronSection{
+   margin-top: 10px;
+}
 
 footer{
    background: #333;
@@ -24,11 +27,24 @@ footer{
    font-size: 11px;
    padding: 20px;
 }
-ul.unstyled{
-   list-style: none;
-   padding: 0;
+.unstyled li{
+   display: inline;
+}
+.unstyled li img:hover{
+   width: 35px;
+   height: 35px;
 
 }
+ul.unstyled, ul.unstyled-nav{
+   list-style: none;
+   padding: 0;
+}
+
+.unstyled a img{
+   width: 30px;
+   height: 30px;
+}
+
 /* --------------------------------------
    Typography
    -------------------------------------- */

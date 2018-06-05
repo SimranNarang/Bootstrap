@@ -3,33 +3,30 @@
 <html>
 	<head>
 		
-		<!-- Website Title & Description for Search Engine purposes -->
+		<!-- Website Title, Description  & KeyWords for Search Engine purposes -->
 		<title> Home </title>
-		<meta name="description" content="">
+		<meta name="description" content="Find best deals at MakeMyTrip for Flight Tickets, Hotels, Holiday Packages, Bus and Train/Railway Reservations for India & International travel. Book cheap air tickets online for Domestic & International airlines, customized holiday packages and special deals on Hotel Bookings.">
+		<meta name="Keywords" content="Hotels,Rooms,Flights,Bus,Cabs,Package">
 
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">		
 		<!-- Adding google font -->
 		<link href='https://fonts.googleapis.com/css?family=Pangolin' rel='stylesheet'>
-		<!-- Mobile viewport optimized -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		
 		<!-- Bootstrap CSS -->
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
-		
 		<!-- Custom CSS -->
 		<link href="includes/css/styles.css" rel="stylesheet">
-		
-		<!-- Include Modernizr in the head, before any other Javascript -->
-		<script src="includes/js/modernizr-2.6.2.min.js"></script>
-		
 		<!-- adding fav-icon -->
 		<link rel="shortcut icon" href="images/icon.png" type="image/png" >
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>		
 	</head>
 	<body>
 	
 	<div class="container">
 		<div class="navbar navbar-fixed-top">
-				<div class="container">
+				<header class="container">
 					
 					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
 					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
@@ -117,7 +114,7 @@
 						</ul><!-- end nav pull-right -->
 					</div><!-- end nav-collapse -->
 				
-				</div><!-- end container -->
+				</header><!-- end container -->
 			</div><!-- end navbar -->
 
 			<div class="carousel slide" id="myCarousel">
@@ -157,7 +154,7 @@
 					<a href="#" class="btn btn-large btn-block btn-default"> <span class="glyphicon glyphicon-phone"> </span> Call us!</a>
 			</div>
 		</div>
-		<div class="jumbotronSection">
+		<div id="jumbotronSection">
 			<div class="jumbotron">
     			<h2>Welcome to make<span id="myText">my</span>trip</h2> 
 				<p>Looking for Hotels, Flights, Cabs, Buses and Other Booking Services?</p>
@@ -168,13 +165,13 @@
 
 
 
-		<div class="row" id="featureHeading">
+		<section class="row" id="featureHeading">
 
 			<div class="col-12">
 				<h2> Room </h2>
 				<p class="lead"> Make yourself at home is our Slogan. We offer best rooms in industry. Sleep well and Rest well</p>
 			</div> <!-- Ending of col-12 div -->
-		</div><!-- end of featureHeading -->
+		</section><!-- end of featureHeading -->
 		
 		<div class="row" id="features">
 			<div class="col-sm-4 feature">
@@ -232,37 +229,34 @@
 			</div> <!-- end of col-sm-4 -->
 		</div><!-- end of features -->
 
-		<div class="section">
-			<div class="col-12">
-				<form class="form">
-						<div class="form-row">
-						<div class="col-sm-3">
-							<label><span class="glyphicon glyphicon-calendar"></span> Check In</label>
-		  					<input type="text" class="form-control" placeholder="DD-MM-YYYY">
-						</div>
-					    <div class="col-sm-3">
-							<label><span class="glyphicon glyphicon-calendar"></span> Check Out</label>
-		  					<input type="text" class="form-control" placeholder="DD-MM-YYYY">
-						</div>
-						<div class="col-sm-2">
-							<label><span class="glyphicon glyphicon-user"></span> Adults </label>
-		  					<input type="text" class="form-control" placeholder="01">
-						</div>
-						<div class="col-sm-2">
-							<label><span class="glyphicon glyphicon-user"></span> Kids </label>
-		  					<input type="text" class="form-control" placeholder="01">
-						</div>
-						<div class="col-sm-2">
-							<label><span class="glyphicon glyphicon-search"></span> Search </label>
-		  					<button class="btn btn-default btn-block"> Search </button>
-						</div>
-					</div>
-				</form>
+		
+			
+		<form class="form col-12">
+				<div class="form-row">
+				<div class="col-sm-3">
+					<label><span class="glyphicon glyphicon-calendar"></span> Check In</label>
+  					<input type="text" class="form-control" placeholder="DD-MM-YYYY">
+				</div>
+			    <div class="col-sm-3">
+					<label><span class="glyphicon glyphicon-calendar"></span> Check Out</label>
+  					<input type="text" class="form-control" placeholder="DD-MM-YYYY">
+				</div>
+				<div class="col-sm-2">
+					<label><span class="glyphicon glyphicon-user"></span> Adults </label>
+  					<input type="text" class="form-control" placeholder="01">
+				</div>
+				<div class="col-sm-2">
+					<label><span class="glyphicon glyphicon-user"></span> Kids </label>
+  					<input type="text" class="form-control" placeholder="01">
+				</div>
+				<div class="col-sm-2">
+					<label><span class="glyphicon glyphicon-search"></span> Search </label>
+  					<button class="btn btn-default btn-block"> Search </button>
+				</div>
 			</div>
-		</div><!-- end of form -->
+		</form> <!-- end of form -->
 			<hr>
-			<br>
-			<hr>
+
 		<div class="row" id="moreInfo">
 			<div class="col-sm-6">
 				<h3>More about us</h3>
@@ -274,7 +268,7 @@
 						</li>
 					</ul>
 					<div class="tab-content">
-						<div class="tab-pane active" id="tab1">
+						<section class="tab-pane active" id="tab1">
 							<h4> <span class="glyphicon glyphicon-map-marker"></span> Our Location <small> office location </small> </h4>
 
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.881254868107!2d77.60400394974485!3d12.979445990805809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1680a56a367b%3A0x6749bb83808938bd!2sMakeMyTrip+India+Pvt.+Ltd!5e0!3m2!1sen!2sin!4v1528128006689" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -283,9 +277,9 @@
 							<p>If you are coming from Richmond Road side: Take a right turn to get on to Residency Road. Please do not get on to the flyover on Richmond Road. After taking the right turn, you will see the MakeMyTrip.com office located a little before Chancery Pavilion Hotel.</p>
 
 							<p>If you are coming from Lavelle Road side: Take a left turn from Lavelle Road on to Residency Road. After taking the left turn, you will see the MakeMyTrip.com office located opposite the Bangalore Club and a little before Chancery Pavilion Hotel.</p>  <!-- end tab-pane -->
-					   </div>
+					   </section>
 
-						<div class="tab-pane" id="tab2">
+						<section class="tab-pane" id="tab2">
 								<h4> About Us <small>and for Query click on the button</small></h4>
 							
 
@@ -345,14 +339,13 @@
 										</div><!-- end of modal-content -->
 									</div> <!-- end of modal-dialog -->
 								</div> <!-- end of modal -->
-                            </div> <!-- end  of sencond tab -->	
+                            </section> <!-- end  of sencond tab -->	
 					    </div>
-
 			    </div> <!-- end of tabbable -->
 		    </div> <!-- end of small col-6 -->
 
 
-			    <div class="col-sm-6">
+			    <section class="col-sm-6">
 			    	<h3>Some Frequently Asked Quetions</h3>			    	
 			    	<div class="list-group">
 			    		<a href="#" class="list-group-item">
@@ -370,7 +363,7 @@
 			    			
 			    		</a>
 			    	</div> <!-- end of list-group -->
-</div>
+				</section>
 	    </div> <!-- end moreInfo -->
     </div> <!-- end of container -->
 
@@ -390,7 +383,7 @@
 				</div> <!-- end of col-sm-4 -->
 				<div class="col-sm-2">
 					<h6> Navigation </h6>
-					<ul class="unstyled">
+					<ul class="unstyled-nav">
 						<li><a href="#"> Home </a></li>
 						<li><a href="#"> Services </a></li>
 						<li><a href="#"> Links </a></li>
@@ -400,10 +393,10 @@
 				<div class="col-sm-2">
 					<h6> Follow Us </h6>
 					<ul class="unstyled">
-						<li><a href="#"> Facebook </a></li>
-						<li><a href="#"> Twitter </a></li>
-						<li><a href="#"> Instagram </a></li>
-						<li><a href="#"> Google+ </a></li>
+						<li><a href="#"> <img src="images/fb_icon.png"> </a></li>
+						<li><a  href="#"> <img src="images/twitter_icon.png"> </a></li>
+						<li><a href="#"> <img src="images/insta.png"> </a></li>
+						<li><a href="#"> <img src="images/google.png"> </a></li>
 					</ul>
 				</div> <!-- end of col-sm-2 -->
 				<div class="col-sm-2">
