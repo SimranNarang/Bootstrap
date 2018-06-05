@@ -69,7 +69,7 @@ body{
    font-size: 32px;
 }
 #myCarousel .item{
-   height: 400px;
+   height: 350px;
 }
 
 #slide1{
@@ -106,7 +106,7 @@ body{
    -------------------------------------- */
 @media (max-width: 480px) {
      #myCarousel .item{
-      height: 400px;
+      height: 160px;
       }
       #slide1{
          background: url('../../images/carousel_small_01.jpg') top center no-repeat;
@@ -155,7 +155,7 @@ body{
 /* Large desktop */
 @media (min-width: 1200px) {
    #myCarousel .item{
-   height: 500px;
+   height: 450px;
    }
    #slide1{
       background: url('../../images/carousel_large_01.jpg') top center no-repeat;
